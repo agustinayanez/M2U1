@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <style>
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1> Ejercicio 1 </h1>
+    <div class="cuadrado" id="cuadrado1"></div>
+    <div class="cuadrado" id="cuadrado2"></div>
+    <div class="cuadrado" id="cuadrado3"></div>
+    <script>
+        const cuadrado1 = document.getElementById('cuadrado1');
+        const cuadrado2 = document.getElementById('cuadrado2');
+        const cuadrado3 = document.getElementById('cuadrado3');
+
+        cuadrado1.style.backgroundColor = 'red';
+        cuadrado1.addEventListener('click', function() {
+            document.body.style.backgroundColor = 'red';
+        });
+        cuadrado2.style.backgroundColor = 'blue';
+        cuadrado2.addEventListener('click', function(){
+            document.body.style.backgroundColor = 'blue';
+        });
+        cuadrado3.style.backgroundColor = 'green';
+        cuadrado3.addEventListener('click', function() {
+            document.body.style.backgroundColor = 'green';
+        });
+    
+    </script>
+</body>
+</html>
